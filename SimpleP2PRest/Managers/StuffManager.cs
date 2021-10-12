@@ -19,9 +19,9 @@ namespace SimpleP2PRest.Managers
             return new List<Stuff>(Data);
         }
 
-        public Stuff GetByName(string name)
+        public List<Stuff> GetByName(string name)
         {
-            return Data.Find(s => s.Name == name);
+            return Data.FindAll(s => s.Name == name);
         }
 
         public Stuff Add(Stuff newStuff)

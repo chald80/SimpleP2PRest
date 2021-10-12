@@ -25,7 +25,7 @@ namespace SimpleP2PRest.Controllers
 
 
         [HttpGet("{name}")]
-        public Stuff Get(string name)
+        public List<Stuff> Get(string name)
         {
             return _manager.GetByName(name);
         }
